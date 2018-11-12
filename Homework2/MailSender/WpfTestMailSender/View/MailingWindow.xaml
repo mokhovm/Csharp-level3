@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfTestMailSender.MailingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTestMailSender.Model"
+        mc:Ignorable="d"
+        Title="MailingWindow" Height="525.6" Width="800" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Добавить задачу" HorizontalAlignment="Left" Margin="10" Width="136" Click="Button_Click1" HorizontalContentAlignment="Center"/>
+            <Button Content="Редактор серверов" HorizontalAlignment="Left" Margin="10" Width="136" Click="Button_Click1" HorizontalContentAlignment="Center"/>
+            <Button Content="Редактор клиентов" HorizontalAlignment="Left" Margin="10" Width="136" Click="Button_Click2" HorizontalContentAlignment="Center"/>
+            <Button Content="Редактор рассылки" HorizontalAlignment="Left" Margin="10" Width="136" Click="Button_Click3" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        <DataGrid Margin="10" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ItemsSource="{x:Static local:MailingList.MainMailnigList}"/>
+    </StackPanel>
+        
+
+
+
+</Window>
